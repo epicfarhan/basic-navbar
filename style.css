@@ -1,0 +1,88 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	overflow: hidden;
+	height : 1000px;
+	width : auto;
+}
+
+nav{
+	display: flex;
+	padding : 16px;
+	background-color: black;
+	color: white;
+}
+
+.logo-box, .nav-links{
+	width: 50%;
+}
+
+.nav-links{
+	    text-align: end;
+    padding-right: 50px;
+}
+
+h4{
+	padding-left: 50px;
+}
+
+.hamburger{
+	display : none;
+	width : 20px;
+}
+
+.desktop-links{
+	margin-left: 20px;
+	text-decoration: none;
+	color : white;
+}
+
+.mobile-links{
+   color : white;
+   font-size: 50px;
+   padding-left : 30px;
+   text-decoration: none;
+}
+
+.mobile-nav{
+	background-color: purple;
+    position: absolute;
+    height: 100%;
+    z-index: 2;
+    top: 0px;
+    right: 0px;
+    width : 0%;
+    display : grid;
+    font-size: 30px;
+    align-items: center;
+    transition: 500ms ease;
+}
+
+.close{
+	width : 20px;
+	top: 30px;
+    right: 40px;
+    position : absolute;
+    display: none;
+
+}
+
+@media screen and (max-width : 594px){
+	.desktop-links{
+		display: none;
+	}
+
+
+	.hamburger{
+		display : initial;
+	}
+}
+
+@media screen and (max-width : 460px){
+	.mobile-nav{
+		width : 100%;
+	}
+}
